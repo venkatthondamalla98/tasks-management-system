@@ -93,7 +93,7 @@ tasks-management-system/
  
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/venkatthondamalla98/tasks-management-system.git
+git clone https://github.com/yourusername/tasks-management-system.git
 cd tasks-management-system
 ```
  
@@ -221,16 +221,18 @@ model Task {
 3. Update `DATABASE_URL` in your backend env
 4. Run `npx prisma migrate deploy`
  
-### Backend → [Railway](https://railway.app) (Free)
-1. Connect your GitHub repo
-2. Set root directory to `server/`
-3. Add environment variables
-4. Railway auto-deploys on push
+### Backend → [Render](https://render.com) (Free)
+1. Connect your GitHub repo on Render
+2. Set root directory to `server`
+3. Set build command: `npm install && npm run build`
+4. Set start command: `node dist/index.js`
+5. Add environment variables (`DATABASE_URL`, `JWT_ACCESS_SECRET`, `JWT_REFRESH_SECRET`, `PORT=5000`)
+6. Render auto-deploys on push
  
 ### Frontend → [Vercel](https://vercel.com) (Free)
-1. Connect your GitHub repo
-2. Set root directory to `client/`
-3. Add `NEXT_PUBLIC_API_URL` pointing to Railway URL
+1. Connect your GitHub repo on Vercel
+2. Set root directory to `client`
+3. Add `NEXT_PUBLIC_API_URL` pointing to your Render URL
 4. Vercel auto-deploys on push
  
 ---
