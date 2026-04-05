@@ -9,6 +9,17 @@ A full-stack task management application built with **Next.js**, **Node.js**, **
  
 ---
  
+## 🌐 Live Demo
+ 
+| Service | URL |
+|---|---|
+| 🖥️ **Frontend** | [https://tasks-management-system-azure.vercel.app](https://tasks-management-system-azure.vercel.app/login) |
+| ⚙️ **Backend API** | [https://tasks-management-system-crab.onrender.com](https://tasks-management-system-crab.onrender.com) |
+ 
+> **Test the app** → [Click here to open](https://tasks-management-system-azure.vercel.app/login)
+ 
+---
+ 
 ## ✨ Features
  
 - 🔐 **Authentication** — Register, Login, Logout with JWT Access + Refresh Tokens
@@ -19,6 +30,22 @@ A full-stack task management application built with **Next.js**, **Node.js**, **
 - 📱 **Responsive Design** — Works on desktop and mobile
 - 🔒 **Secure** — Passwords hashed with bcrypt, protected routes with JWT
  
+---
+ 
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login Page](./screenshots/login.png)
+
+### 📝 Register Page
+![Register Page](./screenshots/register.png)
+
+### 📋 Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### ➕ Create Task
+![Create Task](./screenshots/create-task.png)
+  
 ---
  
 ## 🛠️ Tech Stack
@@ -228,12 +255,14 @@ model Task {
 4. Set start command: `node dist/index.js`
 5. Add environment variables (`DATABASE_URL`, `JWT_ACCESS_SECRET`, `JWT_REFRESH_SECRET`, `PORT=5000`)
 6. Render auto-deploys on push
+7. 🟢 **Live at:** [https://tasks-management-system-crab.onrender.com](https://tasks-management-system-crab.onrender.com)
  
 ### Frontend → [Vercel](https://vercel.com) (Free)
 1. Connect your GitHub repo on Vercel
 2. Set root directory to `client`
 3. Add `NEXT_PUBLIC_API_URL` pointing to your Render URL
 4. Vercel auto-deploys on push
+5. 🟢 **Live at:** [https://tasks-management-system-azure.vercel.app](https://tasks-management-system-azure.vercel.app/login)
  
 ---
  
@@ -257,8 +286,9 @@ If refresh fails → Redirect to /login
  
 ## 👤 Author
  
-**Venkat Thondamalla**  
+**Venkat Thondamalla**
 📧 venkatthondamalla@gmail.com
+🌐 [Live App](https://tasks-management-system-azure.vercel.app/login)
  
 ---
  
